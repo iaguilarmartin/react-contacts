@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Stateless Functional Component
 function ListContacts(props) {
@@ -41,5 +42,10 @@ function ListContacts(props) {
         )
     }
 }*/
+
+ListContacts.propTypes = {
+    contacts: PropTypes.array.isRequired,
+    onDeleteContact: PropTypes.func.isRequired
+}
 
 export default ListContacts;
